@@ -1,0 +1,317 @@
+:root {
+  --orange: #fdb91b;
+  --background: #f5f5dc;
+  --purple: #b19ff9;
+  --violet: #a16ae8;
+  --green: #0e3506;
+  --shadow: 0 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/background.jpg);
+  z-index: -1;
+  filter: blur(4px);
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  color: var(--orange);
+  text-shadow: var(--shadow);
+}
+
+.hero p {
+  font-size: 1.4rem;
+  text-shadow: var(--shadow);
+}
+
+.hero a {
+  color: var(--violet);
+  border: solid 1px;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: var(--violet);
+  color: #fff;
+}
+
+.hero h4 {
+  color: #fff;
+  margin-top: 1.5rem;
+  text-shadow: var(--shadow);
+}
+
+.mynavbar {
+  background-color: rgba(235, 235, 235, 0.3) !important;
+  backdrop-filter: blur(3px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.mynavbar .nav-link {
+  font-weight: 600;
+}
+
+.sticky-top {
+  overflow: hidden;
+}
+
+.home {
+  background-image: url(img/home-background.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -4rem;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+  filter: brightness(85%);
+}
+
+.home h2,
+.gifts h2,
+.penutup h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  text-shadow: var(--shadow);
+  padding-bottom: 2rem;
+}
+
+.home h1 {
+  color: var(--orange);
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  text-shadow: var(--shadow);
+}
+
+.home h3 {
+  padding-top: 2rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 2rem;
+  text-shadow: var(--shadow);
+}
+
+.home p {
+  font-size: 1.5rem;
+}
+
+.home .couple h1 {
+  color: var(--orange);
+  padding-bottom: 1rem;
+  font-size: 5rem;
+  text-shadow: var(--shadow);
+}
+
+.home .couple p {
+  color: #000;
+  margin-bottom: 2px;
+  font-size: 1.4rem;
+}
+
+.home .couple h3 {
+  color: var(--green);
+}
+
+.home .couple h4 {
+  color: var(--orange);
+  font-family: "Great Vibes", cursive;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  font-size: 5rem;
+  text-shadow: var(--shadow);
+}
+
+.acara {
+  background-image: url(img/acara-background.png);
+  background-size: cover;
+  min-height: 100vh;
+  filter: brightness(111%);
+  color: #fff;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.acara h2,
+.rsvp h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  text-shadow: var(--shadow);
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+}
+
+.acara .map {
+  flex: 1 1 45rem;
+  width: 100;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  box-shadow: var(--shadow);
+}
+
+.acara a {
+  color: var(--violet);
+  border: solid 1px;
+  box-shadow: var(--shadow);
+}
+
+.acara .alamat {
+  color: #000;
+}
+
+.acara .card {
+  background-color: rgba(235, 235, 235, 0.2) !important;
+  color: white !important;
+  border: 1px solid #fff9f9;
+}
+
+.acara .card-header {
+  border-bottom: 1px solid #fff9f9;
+}
+
+.acara .card-body {
+  font-size: 1rem;
+}
+
+.acara .card-footer {
+  border-top: 1px solid #fff9f9;
+}
+
+.rsvp,
+.gifts,
+.penutup {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background-color: #ccc6e6;
+}
+
+/* .rsvp {
+  height: 70rem;
+} */
+
+.rsvp p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.rsvp p {
+  color: #000;
+  font-weight: 500;
+}
+
+.rsvp button {
+  color: #fff;
+  border: solid 1px;
+  background-color: var(--violet);
+  box-shadow: var(--shadow);
+}
+
+.gifts {
+  background-color: #848b96;
+}
+
+.gifts img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* media query */
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 52px;
+    margin: 7px;
+  }
+}
+
+.audio-icon-wrapper {
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 2.3rem;
+  right: 2rem;
+  cursor: pointer;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+.map {
+  box-shadow: var(--shadow);
+  border-radius: 2rem;
+}
+
+.penutup .arab {
+  color: var(--orange);
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  text-shadow: var(--shadow);
+}
+
+@keyframes rotating {
+  from {
+    tramsform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .simply-countdown > .simply-section {
+    padding: 50px;
+    margin: 4px;
+  }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 30px;
+    margin: 1px;
+  }
+}
