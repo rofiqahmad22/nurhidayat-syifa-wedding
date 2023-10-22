@@ -206,81 +206,83 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <h2>Konfirmasi Kehadiran</h2>
-            <p>Isi form dibawah untuk melakukan konfirmasi kehadiran.</p>
+            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
           </div>
         </div>
-      </div>
 
-      <form
-        class="row row-cols-md-auto g-3 align-items-center justify-content-center"
-        method="POST"
-        action="https://script.google.com/macros/s/AKfycbxgRHf-bqkEwn4DJCTyagRdTu3p-Fulojh6VsVe0NgO2jh0OFRKOv91T22gKWCI3iQV_w/exec"
-        id="my-form"
-      >
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="nama" class="form-label">Nama</label>
-            <input type="text" class="form-control" id="nama" name="nama" />
+        <form
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbxgRHf-bqkEwn4DJCTyagRdTu3p-Fulojh6VsVe0NgO2jh0OFRKOv91T22gKWCI3iQV_w/exec"
+          id="my-form"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
           </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="jumlah" class="form-label">Jumlah</label>
-            <input
-              type="number"
-              class="form-control"
-              id="jumblah"
-              name="jumlah"
-              min="1"
-              length="1"
-              value="1"
-            />
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input
+                type="number"
+                class="form-control"
+                id="jumlah"
+                name="jumlah"
+                min="1"
+                length="1"
+                value="1"
+              />
+            </div>
           </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="status" class="form-label">Konfirmasi</label>
-            <select name="status" id="status" class="form-select">
-              <option selected>Pilih salah satu</option>
-              <option value="Hadir">Hadir</option>
-              <option value="Tidak Hadir">Tidak Hadir</option>
-            </select>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div class="col-12" style="margin-top: 34px">
-          <button class="btn btn-sm">Kirim</button>
-        </div>
-      </form>
+          <div class="col-12" style="margin-top: 35px">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
 
-      <div class="row justify-content-center mt-5">
-        <div class="col-md-6">
-          <div id="disqus_thread"></div>
-          <script>
-            /**
-             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-            (function () {
-              // DON'T EDIT BELOW THIS LINE
-              var d = document,
-                s = d.createElement("script");
-              s.src =
-                "https://the-wedding-of-nurhidayat-syifa.disqus.com/embed.js";
-              s.setAttribute("data-timestamp", +new Date());
-              (d.head || d.body).appendChild(s);
-            })();
-          </script>
-          <noscript
-            >Please enable JavaScript to view the
-            <a href="https://disqus.com/?ref_noscript#disqus_thread"
-              >comments powered by Disqus.</a
-            ></noscript
-          >
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+              var disqus_config = function () {
+                this.page.url =
+                  "https://nurhidayat-syifa-wedding.rofiqahmad.com"; // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier =
+                  "https://nurhidayat-syifa-wedding.rofiqahmad.com"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src =
+                  "https://the-wedding-of-nurhidayat-syifa.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript
+              >Please enable JavaScript to view the
+              <a href="https://disqus.com/?ref_noscript#disqus_thread"
+                >comments powered by Disqus.</a
+              ></noscript
+            >
+          </div>
         </div>
       </div>
     </section>
