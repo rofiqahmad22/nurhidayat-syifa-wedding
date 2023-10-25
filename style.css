@@ -90,6 +90,7 @@ body {
   padding-top: 9rem;
   padding-bottom: 5rem;
   filter: brightness(85%);
+  animation: fade-up 0.5s;
 }
 
 .home h2,
@@ -155,6 +156,7 @@ body {
   color: #fff;
   padding-top: 10rem;
   padding-bottom: 8rem;
+  animation: fade-up 4s linear;
 }
 
 .acara h2,
@@ -287,6 +289,17 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
   }
 }
 
